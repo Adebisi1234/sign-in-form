@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Norse-gold';
+    src: url(./Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+div.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.logo {
+    flex: 1;
+    flex-basis: 30vw;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+}
+
+.header{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.561);
+    font-family: 'Norse-gold';
+    font-weight: 900;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+div.content {
+    flex: 2;
+    flex-basis: 60vw;
+    padding-left: 20px;
+    margin-top: 20vh;
+    /* padding: 10px 30%; */
+}
+
+div.input {
+    display: flex;
+    gap: 28px;
+}
+
+label {
+    display: block;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+p, span {
+    font-weight: 700;
+}
+
+img {
+    width: 5rem;
+}
+
+.logo p {
+    color: white;
+    display: flex;
+    margin-top: 42vh;
+}
+
+@media screen and (max-width: 700px) {
+    div.container {
+        flex-direction: column;
+    }
+
+    .header {
+        gap: 16px;
+        margin: 10vh 0;
+        line-height: 3.5rem;
+    }
+
+    .logo p {
+        color: white;
+    }
+
+    div.content {
+        margin-top: 20px;
+        background-color: gray;
+    }
+}
